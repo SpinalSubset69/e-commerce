@@ -1,0 +1,23 @@
+.card-up{
+    animation: up 0.3s ease-in-out   both;
+}
+
+@keyframes up {
+    from{
+        transform: scale(1);
+    }to{
+        transform: scale(1.02);
+    }
+}
+
+.custom-card:hover{    
+    animation: up 0.3s ease-in-out   both;
+}
+
+.btn-group{
+    width: 100% !important;
+}
+
+.btn{
+    width: 50% !important;
+}

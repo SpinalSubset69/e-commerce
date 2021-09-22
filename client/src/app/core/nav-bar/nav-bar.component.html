@@ -1,0 +1,54 @@
+<div
+  class="
+    sticky-top
+    d-flex
+    flex-column flex-md-row
+    align-items-center
+    justify-content-between
+    p-3
+    px-md-4
+    bg-white
+    border-bottom
+    shadow-sm
+  "
+  style="width: 100%"
+>
+  <img
+    [routerLink]="['/']"
+    src="../../../assets/images/images/logo.png"
+    style="max-height: 70px"
+    class="cool-logo"
+    alt="logo"
+  />
+  <nav class="my-2 my-md-0 mr-md-3 text-uppercase" style="font-size: large">
+    <a
+      class="me-3 py-2  text-decoration-none"
+      [routerLink]="['/']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{exact: true}"     
+      >Home</a
+    >
+    <a
+      class="me-3 py-2  text-decoration-none"
+      [routerLink]="['/shop']"
+      routerLinkActive="active"  
+      >Shop</a
+    >
+    <a
+      class="me-3 py-2  text-decoration-none"
+      [routerLink]="['/']"        
+      >Contact</a
+    >
+  </nav>
+  <div class="d-flex align-items-center justify-content-between">
+    <a href="" class="position-relative">
+      <i
+        class="fa fa-shopping-cart fa-2x mr-5 text-dark"
+        tooltip="{{ array }}"
+      ></i>
+      <div class="cart-no">5</div>
+    </a>
+    <a class="btn btn-outline-secondary ms-4" href="#">SignIn</a>
+    <a class="btn btn-outline-primary ms-2" href="#">SignUp</a>
+  </div>
+</div>
