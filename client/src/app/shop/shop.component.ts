@@ -22,7 +22,7 @@ export class ShopComponent implements OnInit {
   ];
   totalCount: number;
   //Since search bar isnt on a dinamyc block, we can specify that its static
-  @ViewChild('search', { static: true }) search;
+  @ViewChild('search', { static: false }) search;
 
   constructor(private shopService: ShopService) {}
 

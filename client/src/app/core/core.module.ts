@@ -4,17 +4,24 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 //NGX BOOTSTRAP
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { RouterModule } from '@angular/router';
+import { TestErrorComponent } from './test-error/test-error.component';
+import { SectionHeaderComponent } from './section-header/section-header.component';
+import { BreadcrumbModule } from 'xng-breadcrumb';
 
 @NgModule({
   declarations: [
-    NavBarComponent
+    NavBarComponent,
+    TestErrorComponent,
+    SectionHeaderComponent,    
   ],
   imports: [
     TooltipModule.forRoot(),
     CommonModule,
-    RouterModule
+    RouterModule,
+    BreadcrumbModule
   ],exports:[
-    NavBarComponent
+    NavBarComponent,
+    SectionHeaderComponent,    
   ]
 })
 export class CoreModule { }
