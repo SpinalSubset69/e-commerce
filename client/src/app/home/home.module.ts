@@ -17,7 +17,7 @@ import { CarouselConfig } from 'ngx-bootstrap/carousel';
   [
     HomeComponent
   ], providers:[
-    {provide: CarouselConfig, useValue: {interval: 3500, noPause: true, showIndicators: true}}
+    {provide: CarouselConfig, useValue: {interval: 2500, noPause: true, showIndicators: true}}
   ]
 })
 export class HomeModule { }

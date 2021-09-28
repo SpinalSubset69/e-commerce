@@ -16,7 +16,7 @@ namespace API.Controllers
 {
     [ApiController]
     [Route("api/{controller}")]
-    public class ProductsController :ControllerBase
+    public class ProductsController : ControllerBase
     {
         private readonly IGenericRepository<Product> productsRepos;
         private readonly IGenericRepository<ProductBrand> brandsRepo;
