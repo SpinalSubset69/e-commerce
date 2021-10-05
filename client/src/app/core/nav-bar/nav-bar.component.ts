@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { BasketService } from 'src/app/basket/basket.service';
+import { IBasket, IBasketItem } from 'src/app/shared/Models/Basket';
+import { IProduct } from 'src/app/shared/Models/Product';
 
 @Component({
   selector: 'app-nav-bar',
@@ -6,10 +10,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent implements OnInit {
-  array = [1,2,3,4,5,6,7,1];  
-  constructor() { }
+  array:IBasketItem[] = [];  
+  basket$: Observable<IBasket>;
+  constructor(private basketService:BasketService) { }
 
   ngOnInit(): void {
+    this.basket$ = this.basketService.basket$;    
   }
 
 }

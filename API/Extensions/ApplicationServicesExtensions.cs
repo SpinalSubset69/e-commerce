@@ -12,7 +12,7 @@ namespace API.Extensions
 
         public static IServiceCollection AddApplicationSevices(this IServiceCollection services){
                         
-             services.AddScoped<IBasketRepository, BasketRepository>();              
+            services.AddScoped<IBasketRepository, BasketRepository>();              
             //Una nueva instancia de nuestro context será creada cada que llamamos los controladores
             services.AddScoped<IProductRepository, ProductRepository>(); //Transient es para un método en específico y se destruye cuando termina ese métdodo
                                  //Singleton dura toda la sesión 

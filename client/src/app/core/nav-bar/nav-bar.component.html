@@ -41,12 +41,11 @@
     >
   </nav>
   <div class="d-flex align-items-center justify-content-between">
-    <a href="" class="position-relative">
-      <i
-        class="fa fa-shopping-cart fa-2x mr-5 text-dark"
-        tooltip="{{ array }}"
+    <a routerLink="/basket" class="position-relative">
+      <i 
+        class="fa fa-shopping-cart fa-2x mr-5 text-dark"      
       ></i>
-      <div class="cart-no">5</div>
+      <div *ngIf="(basket$ | async) as basket " class="cart-no">{{ basket.items.length }}</div>
     </a>
     <a class="btn btn-outline-secondary ms-4" href="#">SignIn</a>
     <a class="btn btn-outline-primary ms-2" href="#">SignUp</a>
