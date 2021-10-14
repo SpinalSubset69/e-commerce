@@ -7,7 +7,7 @@ namespace Infrastructure.Data
 {
     public class Context : DbContext
     {
-        public Context( DbContextOptions options) : base(options)
+        public Context( DbContextOptions<Context> options) : base(options)
         {
         }
 
